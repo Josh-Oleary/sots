@@ -424,6 +424,7 @@ p {
 	/* margin: 5em 0; */
 	flex-basis: 90%;
 }
+
 .team-card h4 {
 	text-align: center;
 }
@@ -824,8 +825,16 @@ p {
 		margin: 10px;
 		font-size: 20px;
 	}
+	#team-hero {
+		height: 50vh;
+		background-size: cover;
+	}
+	#team-hero-background {
+		height: 50vh;
+	}
 	.team-hero-headers {
-		margin-top: 2em;
+		margin-top: 0em;
+		margin: 1em;
 	}
 	.testimonial-card {
 		height: auto;
@@ -865,12 +874,36 @@ p {
 	#footer-socials img {
 		width: 40px;
 	}
+	#about-banner {
+		font-size: 18px;
+		text-align: left;
+		margin: 30px;
+		width: 85%;
+	}
+	.team-heading {
+		margin: 30px;
+	}
+	.team-heading h1 {
+		font-size: 18px;
+	}
+	.team-heading h4 {
+		font-size: 15px;
+	}
+	.team-heading img {
+		width: 90%;
+	}
+	.team-card img{
+		width: 100%;
+	}
+	.team-hero-headers {
+		margin-top: 50px;
+	}
 	.team-hero-headers h3 {
 		font-size: 35px;
 	}
 	.team-card img {
-		height: 15em;
-		width: 19em;
+		/* height: 15em;
+		width: 19em; */
 		/* box-shadow: 0 0 5px; */
 	}
 	.team-container {
