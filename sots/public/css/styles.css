@@ -448,28 +448,67 @@ a:active {
   font-size: 50px;
 }
 form {
-  width: 80vw;
+  padding: 10px;
+  flex-wrap: wrap;
+  max-width: 800px;
   margin: auto;
   transform: translateY(6em);
 }
 .contact-form-container {
-  height: 20em;
+  height: fit-content;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-textarea {
+.form-control {
+  border-radius: 3px;
+  border: none;
+}
+.contact-form-name {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.name-holder {
+  width: 100%;
+}
+.name {
+  height: 3em;
+  width: 100%;
+}
+.email {
+  height: 3em;
+}
+#text-area {
   height: 8em;
+  width: 100%;
+  padding: 10px;
+  resize: none;
+}
+.contactBtn {
+  margin-top: 10px;
+  width: fit-content;
+  align-self: flex-end;
 }
 #submitBtn {
-  width: 100%;
+  width: 150px;
+  height: 3em;
+  border: none;
+  border-radius: 3px;
   background-color: #99d6cf;
   transition: 250ms;
   color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 #submitBtn:hover {
-  background-color: #335f78;
-  color: rgba(255, 255, 255, 0.712);
+  background-color: #fff;
+}
+@media (min-width: 550px) {
+  .contact-form-name {
+    flex-direction: row;
+  }
 }
 /* registration styles */
 #register-form-container {
