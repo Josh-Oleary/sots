@@ -478,6 +478,7 @@ a:active {
 	width: 64em;
 	border-radius: .375rem;
 	height: 8em;
+	
 }
 .email-input-label {
 	color: black;
@@ -532,6 +533,10 @@ a:active {
 	height: 90vh;
 	/* background-color: rgba(0, 0, 0, 0.329); */
 	z-index: -1;
+}
+
+#login-hero-background {
+	background-color: #0e232f;
 }
 .page-cta {
 	text-align: center;
