@@ -427,6 +427,7 @@ p {
 }
 
 
+
 .team-card h4 {
 	text-align: center;
 }
@@ -457,9 +458,76 @@ a:active {
 	-o-background-size: cover;
 	background-size: cover;
 	image-rendering: auto; */
-	background-color: #12212b;
+	background-color: white;
 	height: 130vh;
 }
+.contact-top-row {
+	display: flex;
+	justify-content: space-around;
+	height: 8em;
+	transform: translateX(-1.5em);
+}
+.name-input {
+	width: 30.4em;
+	border-radius: .375rem;
+	height: 10em;
+
+}
+
+.email-input {
+	width: 64em;
+	border-radius: .375rem;
+	height: 8em;
+}
+.email-input-label {
+	color: black;
+}
+.contact-second-row, .contact-text-area {
+	display: flex;
+	flex-direction: column;
+	margin-top: .5em;
+}
+
+.contact-message-input {
+	height: 12em;
+}
+#contact-head {
+	color: black;
+	text-align: left;
+	margin-left: 2em;
+	font-weight: medium;
+	font-family: 'Rubik';
+}
+#contact-submit {
+	margin-top: 1.25em;
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	background-color: #99D6CF;
+	color: #12212B;
+	border-radius: 5px;
+	height: 4em;
+	width: 11em;
+	
+}
+#submit-btn-div {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 3em;
+}
+.name-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.name-input-label {
+	font-size: 1em;
+	color: black !important;
+}
+
 #contact-hero-background {
 	height: 90vh;
 	/* background-color: rgba(0, 0, 0, 0.329); */
@@ -473,6 +541,9 @@ a:active {
 }
 .page-cta h2 {
 	font-size: 50px;
+}
+#contact-form {
+	width: 70vw;
 }
 form {
 	width: 80vw;

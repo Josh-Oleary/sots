@@ -1,31 +1,39 @@
 <%- include('partials/header') %> 
     <section id="contact-hero">
-        <div id="contact-hero-background">
+  <div id="contact-hero-background">
 <%- include('partials/navbarWhite') %> 
-    <div class="contact">
-      <div class="page-cta">
-        <h2>Get In Touch!</h2>
-      </div>
-        <div class="page-container">
-            <form  id='contact-form' action="/contact" method='POST' enctype="x-www-form-urlencoded">
-                <div class="contact-form-container row">
-                    <div class="top-row">
-                        <input type="text" name='fullName' class="form-control" placeholder="Full Name" aria-label="First name" required>
-                    </div>
-                    <div class="top-row">
-                        <input type="email" name='email' class="form-control" placeholder="Email Address" aria-label="Email Address" required>
-                    </div>
-                    <div id="contact-msg" class="input-group">
-                        <span class="input-group-text">Message</span>
-                        <input type="text" name='content' class='form-control' required>
-                    </div>
-                    <div class="contactBtn"> 
-                        <button id="submitBtn" type="submit" value='submit' class="btn btn-secondary btn-lg">Submit</button>
-                    </div>
-                </div>
-            </form>
-           
+<div class="contact">
+<div class="page-cta">
+  <h2 id="contact-head">Let's chat!</h2>
+</div>
+  <div class="page-container">
+    <form  id='contact-form' action="/contact" method='POST' enctype="x-www-form-urlencoded">
+      <div class="">
+        <div class="contact-top-row">
+          <div class="name-flex">
+            <label for="firstName" class="name-input-label">First name</label>
+            <input type="text" id="firstName" class="name-input">
+          </div>
+          <div class="name-flex">
+            <label for="lastName" class="name-input-label">Last name</label>
+            <input type="text" id="lastName" class="name-input">
+          </div>
         </div>
-    </div>
-    </section>
+        <div class="contact-second-row">
+          <label for="email" class="email-input-label">Email</label>
+          <input type="email" id="email" class="email-input">
+        </div>
+        <div class="contact-text-area">
+          <label for="message-input" class="email-input-label">Your message</label>
+          <input type="textarea" id="message-input" class="email-input contact-message-input">
+        </div>
+      </div>
+      <div id="submit-btn-div">
+        <button id="contact-submit">Submit</button>
+      </div>
+    </form>
+      
+  </div>
+</div>
+</section>
       <%- include('partials/footer')%>
