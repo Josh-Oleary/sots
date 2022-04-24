@@ -1,17 +1,39 @@
 <%- include('../partials/header') %>
 <section id="admin-hero">
-    <div id="admin-background">
-        <%- include('../partials/navbarWhite') %>
-        <form enctype="multipart/form-data" action="/admin/addReport" method="POST">
-            <label for="date">Today's Date</label>
+  <div id="admin-background">
+    <%- include('../partials/navbarWhite') %>
+    <h3 id="add-report-header">Add a report</h3>
+    <form enctype="multipart/form-data" action="/admin/addReport" method="POST">
+      <select name="reportLocation" id="reportLocation">
+        <option value="placeholder" selected disabled>Location</option>
+        <option value="nelson">Nelson</option>
+        <option value="rossland">Rossland</option>
+      </select>
+      <div id="report-details-container">
+        <div id="condition-rating">
+          <div id="condition-safe">
+            <img src="" alt="">
+          </div>
+          <div id="condition-moderate">
+            <img src="" alt="">
+          </div>
+          <div id="condition-dangerous">
+            <img src="/images/report-danger.png" alt="">
+          </div>
+          <div id="condition-severe">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- <label for="date">Today's Date</label>
             <input type="date" id="date" name="date">
             <label for="location">Location</label>
             <input type="text" id="location" name="location">
             <label for="video">Choose File</label>
             <input type="file" id="video" name="video">
-            <button>Submit Report</button>
-        </form>
-    </div>
+            <button>Submit Report</button> -->
+    </form>
+  </div>
 </section>
 
-<%- include('../partials/footer') %> 
+<%- include('../partials/footer') %>

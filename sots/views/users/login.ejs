@@ -1,58 +1,78 @@
 <%- include('../partials/header') %>
-  <section id="contact-hero" class="register-page">
-    <div id="login-hero-background" class="register-page">
-      <%- include('../partials/navbar') %>
+<section id="" class="register-page">
+  <div id="login-hero-background" class="register-page">
+    <%- include('../partials/navbar') %>
 
-
-        <div id="login-form-container" class="row">
-          <div class="col-6 offset-1">
-            <form class="validated-form" id="login-form" method="POST" action="/login" novalidate>
-              <h1 id="login-header" class="my-4">Login</h1>
-              <div class="my-4">
-                <label class="form-label" for="email">Email</label>
-                <input class="form-control p-3" type="email" id="email" name="email" required>
-              </div>
-              <div class="my-4">
-                <label class="form-label" for="password">Password</label>
-                <input class="form-control p-3" type="text" id="password" name="password" required>
-              </div>
-              
-              <div class="d-flex justify-content-between">
-                <div>
-                  <div class="my-2">
-                    <a href="register">Register here.</a>
-                  </div>
-                  <div class="my-2">
-                    <a href="register">Forgot password?</a>
-                  </div>
-                </div>
-                <button class="btn p-3">Login</button>
-              </div>
-            </form>
+    <div id="login-form-container" class="row">
+      <div class="col-6 offset-1">
+        <form
+          class="validated-form"
+          id="login-form"
+          method="POST"
+          action="/login"
+          novalidate
+        >
+          <h1 id="login-header" class="my-4">Login</h1>
+          <div class="my-4">
+            <label class="form-label" for="email">Email</label>
+            <input
+              class="form-control p-3"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
           </div>
-        </div>
+          <div class="my-4">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-control p-3"
+              type="text"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <div>
+              <div class="my-2">
+                <a href="register">Register here.</a>
+              </div>
+              <div class="my-2">
+                <a href="register">Forgot password?</a>
+              </div>
+            </div>
+            <button class="btn p-3">Login</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </section>
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict'
+  </div>
+</section>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    "use strict";
 
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.querySelectorAll('.validated-form')
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll(".validated-form");
 
-      // Loop over them and prevent submission
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener(
+        "submit",
+        function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
 
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })()
-  </script>
-  <%- include('../partials/footer') %>
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    });
+  })();
+</script>
+<%- include('../partials/footer') %>

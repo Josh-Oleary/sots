@@ -537,6 +537,7 @@ a:active {
 
 #login-hero-background {
 	background-color: #0e232f;
+	height: 95vh;
 }
 .page-cta {
 	text-align: center;
@@ -652,20 +653,18 @@ a:focus {
 
 /* admin home styles */
 #admin-hero {
-	background: url("/images/admin-home-bg.jpg") no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	image-rendering: auto;
-	height: 60vh;
+	height: 100%;
 	z-index: -1;
 }
 
+#add-report-header {
+	margin: 3em 2em;
+}
+
 #admin-background {
-	height: 60vh;
+	height: 100%;
 	width: 100vw;
-	background-color: rgba(59, 59, 59, 0.692);
+	background-color: #0e232f;
 	/* z-index: -2; */
 }
 .admin-form {
@@ -745,6 +744,12 @@ a:active {
 .step-block p {
 	text-align: left;
 	font-style: italic;
+}
+
+#report-details-container {
+	height: 100%;
+	width: 100vw;
+	background: url("/images/report-background.png") no-repeat center center;
 }
 .step-block h2 {
 	text-align: center;
